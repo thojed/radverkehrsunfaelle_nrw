@@ -1,4 +1,4 @@
 # radverkehrsunfaelle_nrw
 Dashboard Radverkehrsunfälle NRW 2019
 
-[Demo](https://thojed.github.io/radverkehrsunfaelle_nrw/)
+[Get me straight to the dashboard](https://thojed.github.io/radverkehrsunfaelle_nrw/)
