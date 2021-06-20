@@ -1,0 +1,116 @@
+body{
+    word-wrap: break-word;
+}
+#map {
+    width: 100%;
+    height: 620px;
+}
+#dashboard-header {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 0.3em;
+  margin-bottom: 0.5rem;
+}
+#reset-all {
+  font-size: 16px;
+  padding-left: 0.3em;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+#copyrights {
+  font-size: 12px;
+}
+/* TJ-Dashboard */
+.tj-dashboard {
+  background: #2F323A;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  color: #ccc;
+}
+.tj-dashboard .chart-wrapper {
+  /* background: #2F323A; */
+  /* border: 1px solid #000000;
+  border-radius: 1px; */
+  margin: 5px 0 5px 0;
+}
+.tj-dashboard .chart-wrapper .chart-title {
+  /* border-bottom: 1px solid #000000; */
+  /* color: #ccc; */
+  font-size: 14px;
+  font-weight: 200;
+  padding: 4px 10px 2px;
+}
+.tj-dashboard .chart-title {
+  color: #aaa;
+}
+.tj-dashboard .chart-wrapper .chart-section {
+  overflow: hidden;
+  /* padding: 5px 10px; */
+  position: relative;
+}
+.tj-dashboard .chart-wrapper .chart-notes {
+  /* background: #fbfbfb;
+  border-top: 1px solid #e2e2e2;
+  color: #808080; */
+  font-size: 12px;
+  padding: 0px 2px 2px 25px;
+}
+
+/* dc.js spezifisches */
+.dc-cbox-group {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  .dc-cbox-group label {
+    display: inline-block;
+  }
+  .dc-cbox-group input[type=checkbox], .dc-cbox-group input[type=radio] {
+    margin: 0 5px 5px 5px;
+  }
+ul.dc-cbox-group {
+    padding-left: 0rem;
+}
+li.dc-cbox-item label {
+    white-space: pre-wrap;
+}
+.dc-chart g.row text {
+  fill: #ccc;
+}
+.dc-cbox-group label {
+  display: inline-block;
+  margin-bottom: 0px;
+  font-size: 11px;
+}
+li.dc-cbox-item {
+  display: flex;
+  margin-bottom: 0.2em;
+}
+.dc-cbox-group {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 2;
+}
+.dc-chart .grid-line, .dc-chart .axis .grid-line, .dc-chart .grid-line line, .dc-chart .axis .grid-line line {
+  fill: none;
+  stroke: #222;
+  shape-rendering: crispEdges;
+}
+ul.dc-cbox-group li input {
+  background-color: #2F323A;
+  border: none; 
+  color: #1A6FFF;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
+ul.dc-cbox-group li input:hover {
+  color: #0056B3;
+  text-decoration: underline;
+}
+
+/* Leaflet-Anpassungen */
+/* Marker-Cluster */
+.marker-cluster div {
+  color: #111;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Radverkehrsunfälle NRW</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/dc.css">
+    <link rel="stylesheet" href="lib/css/leaflet.css">
+    <link rel="stylesheet" href="lib/css/MarkerCluster.css">
+    <link rel="stylesheet" href="lib/css/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="tj-dashboard">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MAP -->
+            <div class="col-lg-6 col-md-8">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="dashboard-header">Radverkehrsunfälle NRW 2019</p>
+                        <p id="reset-all"><a id="resetAll" href="#">- Alle Filter zurücksetzen -</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-section">
+                                <!-- map -->
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CHARTS -->
+            <div class="col-lg-3 col-md-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Unfallkategorie
+                            </div>
+                            <div class="chart-section">
+                                <div id="chart-kategorie"></div>
+                            </div>
+                            <div class="chart-notes">
+                                <a id="reset-kategorie" href="#">Unfallkategorie-Filter zurücksetzen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Unfallart
+                            </div>
+                            <div class="chart-section">
+                                <div id="chart-uart"></div>
+                            </div>
+                            <div class="chart-notes">
+                                <a id="reset-uart" href="#">Unfallart-Filter zurücksetzen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Lichtverhältnisse
+                            </div>
+                            <div class="chart-section">
+                                <div id="chart-licht"></div>
+                            </div>
+                            <div class="chart-notes">
+                                <a id="reset-licht" href="#">Lichtverhältnisse-Filter zurücksetzen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-title">
+                                Straßenzustand
+                            </div>
+                            <div class="chart-section">
+                                <div id="chart-strzust"></div>
+                            </div>
+                            <div class="chart-notes">
+                                <a id="reset-strzust" href="#">Straßenzustand-Filter zurücksetzen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KREISE -->
+            <div class="col-lg-3 col-md-12">
+                <div class="chart-wrapper">
+                    <div class="chart-title">
+                        Kreise und kreisfreie Städte
+                    </div>
+                    <div class="chart-section">
+                        <div id="select-kreise"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p id="reset-all"><a id="resetAll" href="#">- Alle Filter zurücksetzen -</a></p>
+                <div id="copyrights">
+                    NRW-Umriss: © GeoBasis-DE / <a href="http://www.bkg.bund.de" target="_blank">BKG</a> 2019<br>
+                    <a href="https://unfallatlas.statistikportal.de/_opendata2020.html" target="_blank">Unfalldaten</a> (nur NRW und Unfall, an dem mindestens ein Fahrrad beteiligt war): © <a href="https://www.statistikportal.de/de/open-data" target="_blank">Statistische Ämter des Bundes und der Länder</a>, <a href="https://www.govdata.de/dl-de/by-2-0" target="_blank">dl-de/by-2-0</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/js/jquery-3.6.0.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/underscore-min.js"></script>
+    <script src="lib/js/d3.min.js"></script>
+    <script src="lib/js/crossfilter.js"></script>
+    <script src="lib/js/dc.js"></script>
+    <script src="lib/js/Queue.js"></script>
+    <script src="lib/js/leaflet.js"></script>
+    <script src="lib/js/leaflet-heat.js"></script>
+    <script src="lib/js/leaflet.markercluster.js"></script>
+    <script src="js/radunfaelle.js"></script>
+</body>
+
+</html>
