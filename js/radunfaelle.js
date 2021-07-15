@@ -88,7 +88,7 @@ d3.json("src/nrw_umriss.geojson").then(aGeoJSON => {
 
 function buildCharts() {
     // d3.dsv(";", "/data").then(csvData => {
-    d3.dsv(";", "src/radunfaelleNRW2019.csv").then(function (csvData) {
+    d3.dsv(";", "src/radunfaelleNRW2020.csv").then(function (csvData) {
 
         csvData.forEach(function (d) {
             var v = +d["UKATEGORIE"];
